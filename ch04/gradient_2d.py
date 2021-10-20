@@ -7,7 +7,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 def _numerical_gradient_no_batch(f, x):
     h = 1e-4 # 0.0001
-    grad = np.zeros_like(x) # x와 형상이 같은 배열을 생성
+    grad = np.zeros_like(x) # x와 형상이 같은 배열을 생성. 원소가 모두 0
     
     for idx in range(x.size):
         tmp_val = x[idx]
